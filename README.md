@@ -1,5 +1,5 @@
 HospitalRun frontend
-========
+
 
 _Ember frontend for HospitalRun_
 
