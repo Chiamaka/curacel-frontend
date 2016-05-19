@@ -4,7 +4,8 @@ export default Ember.Mixin.create({
   defaultCapabilities: {
     admin: [
       'User Administrator',
-      'System Administrator'
+      'System Administrator',
+      'Hospital Administrator'
     ],
     appointments: [
       'Data Entry',
@@ -145,7 +146,8 @@ export default Ember.Mixin.create({
     ],
     add_user: [
       'User Administrator',
-      'System Administrator'
+      'System Administrator',
+      'Hospital Administrator'
     ],
     add_visit: [
       'Data Entry',
@@ -311,7 +313,8 @@ export default Ember.Mixin.create({
     ],
     delete_user: [
       'User Administrator',
-      'System Administrator'
+      'System Administrator',
+      'Hospital Administrator'
     ],
     discharge_patient: [
       'Data Entry',
@@ -382,7 +385,8 @@ export default Ember.Mixin.create({
       'System Administrator'
     ],
     load_db: [
-      'System Administrator'
+      'System Administrator',
+      'Hospital Administrator'
     ],
     override_invoice: [
       'Hospital Administrator',
@@ -436,7 +440,8 @@ export default Ember.Mixin.create({
     ],
     users: [
       'User Administrator',
-      'System Administrator'
+      'System Administrator',
+      'Hospital Administrator'
     ],
     add_note: [
       'Doctor',
@@ -453,8 +458,9 @@ export default Ember.Mixin.create({
       'System Administrator'
     ],
     'user_roles': [
-      'System Administrator'
-    ]
+      'System Administrator',
+      'Hospital Administrator'
+   ]
   },
 
   _getUserSessionVars: function() {

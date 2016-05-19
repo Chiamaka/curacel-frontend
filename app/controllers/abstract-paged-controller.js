@@ -8,7 +8,7 @@ export default Ember.Controller.extend(PaginationProps, ProgressDialog, UserSess
   nextStartKey: null,
   previousStartKey: null,
   previousStartKeys: [],
-  progressMessage: 'Loading Records.  Please wait...',
+  progressMessage: 'Loading Records.  Please wait and Remember to have an awesome day :)...',
   progressTitle: 'Loading',
   queryParams: ['startKey', 'sortKey', 'sortDesc'],
   sortDesc: false,
@@ -47,6 +47,7 @@ export default Ember.Controller.extend(PaginationProps, ProgressDialog, UserSess
     get() {
       let model = this.get('model');
       if (!Ember.isEmpty(model)) {
+        //returns true if records in the model is greater than 0 i.e there are records.
         return (model.get('length') > 0);
       } else {
         return false;

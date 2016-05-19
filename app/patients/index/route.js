@@ -1,10 +1,12 @@
 import AbstractIndexRoute from 'hospitalrun/routes/abstract-index-route';
 export default AbstractIndexRoute.extend({
   modelName: 'patient',
-  pageTitle: 'Patient Listing',
+  pageTitle: 'Patient Lists',
 
   _getStartKeyFromItem: function(item) {
     var displayPatientId = item.get('displayPatientId');
+    console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+    console.log(displayPatientId);
     return [displayPatientId, 'patient_' + item.get('id')];
   },
 
