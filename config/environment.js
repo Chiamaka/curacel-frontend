@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'hash', // Using hash location type because it is more friendly for offline.
+    server: 'http://localhost:3000',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -66,7 +67,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.serviceWorker.debug = false;
   }
-  
+
   return ENV;
 };
 

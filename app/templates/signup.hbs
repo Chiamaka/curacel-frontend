@@ -1,0 +1,82 @@
+<div class="container">
+	<form class="form-signup" method="post" action="#">
+		<div class="signin-logo">
+			<img src="curacel-logo.png" class="img-responsive" />
+		</div>
+		<div class="signup-contents">
+		<h2 class="form-signin-heading">{{t 'signup.messages.sign_up'}}</h2>
+			<div class="form-group">
+
+				<label for="name" class="cols-sm-2 control-label">Your Name</label>
+				{{hospitalName}}
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<!-- <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name" /> -->
+						{{input type='text' class='form-control' placeholder='Enter the name of your hospital' value=hospitalName}}
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="name" class="cols-sm-2 control-label">Your Address</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<!-- <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name" /> -->
+						{{input type='text' class='form-control' placeholder="Enter your Hospital's address" value=hospitalAddress}}
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="name" class="cols-sm-2 control-label">Head Administrator's Name</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<!-- <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name" /> -->
+						{{input type='text' class='form-control' placeholder='Enter the name of your head administrator' value=adminName}}
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="email" class="cols-sm-2 control-label">Your Email</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+						<!-- <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email" value={{email}}/> -->
+						{{input type='text' class='form-control' placeholder='Enter your email' value=email}}
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="password" class="cols-sm-2 control-label">Password</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+						<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+						<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group ">
+				<button type="button" class="btn btn-primary btn-lg btn-block login-button" {{action 'clickRegister'}}>Register</button>
+			</div>
+			<div class="login-register">
+				{{#link-to 'login' class='text-center'}}Already have an account? Please Login{{/link-to}}
+			</div>
+		</div>
+	</form>
+</div>

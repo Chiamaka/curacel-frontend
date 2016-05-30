@@ -334,6 +334,17 @@ export default {
       sign_in:  'Sign in'
     }
   },
+  signup: {
+    messages: {
+      sign_up:  'please sign up',
+      error:    'Username or password is incorrect.'
+    },
+    labels: {
+      password: 'Password',
+      username: 'Username',
+      sign_up:  'Sign up'
+    }
+  },
   inventory: {
     edit: {
       cost: 'Cost Per Unit:',

@@ -23,6 +23,26 @@
   width: 300px;
 }
 
+.form-signup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin: 0 auto;
+  max-width: 600px;
+
+  .alert { margin-bottom: 15px; }
+
+  input { background: $white; }
+}
+
+.signup-contents {
+  border-radius: 10px;
+  background: $blue_light3;
+  padding: 20px;
+  width: 600px;
+}
+
 .form-signin-heading {
   margin: 0 0 20px;
   text-align: center;
