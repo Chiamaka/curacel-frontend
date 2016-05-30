@@ -19,6 +19,10 @@ module.exports = function(environment) {
     }
   };
 
+  // ENV['ember-simple-auth'] = {
+  //   routeAfterAuthentication: 'welcome'
+  // };
+
   ENV.contentSecurityPolicy = {
     'connect-src': "'self'",
     'default-src': "'self'",

@@ -1,0 +1,10 @@
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+	name: null,
+	// actions:{
+	// 	clickRegister: function(){
+	// 		alert(this.get('fullname'));
+	// 	}
+	// }
+});

@@ -5,7 +5,6 @@ export default AbstractIndexRoute.extend({
 
   _getStartKeyFromItem: function(item) {
     var displayPatientId = item.get('displayPatientId');
-    console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
     console.log(displayPatientId);
     return [displayPatientId, 'patient_' + item.get('id')];
   },

@@ -92,8 +92,10 @@ export default BaseAuthenticator.extend({
       var data = { name: credentials.identification, password: credentials.password };
       this._makeRequest('POST', data).then((response) => {
         response.name = data.name;
-        response.expires_at = this._absolutizeExpirationTime(600);
+        response.expires_at = this._absolutizeExpirationTime(30);
         this._checkUser(response).then((user) => {
+          console.log('&'.repeat(100));
+          console.log(user);
           this.get('config').setCurrentUser(user.name);
           var database = this.get('database');
           database.setup({}).then(() => {
@@ -101,6 +103,7 @@ export default BaseAuthenticator.extend({
           }, reject);
         }, reject);
       }, function(xhr) {
+        console.log("You're offline :(");
         reject(xhr.responseJSON || xhr.responseText);
       });
     });

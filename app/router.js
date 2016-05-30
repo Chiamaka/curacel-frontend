@@ -116,6 +116,7 @@ Router.map(function() {
       this.route('edit', { path: '/edit/:procedure_id' });
     });
   });
+  this.route('welcome');
 });
 
 export default Router;
