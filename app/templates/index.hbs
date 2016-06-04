@@ -1,7 +1,67 @@
 <section class="view index">
 
-  <div class="view-top-bar">
-    <h1 class="view-current-title">{{t "dashboard.title"}}</h1>
-  </div>
+	<div class="view-top-bar">
+		<h1 class="view-current-title">{{t "dashboard.title"}}</h1>
+	</div>
+	
+	<div class="container custom">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<div class="circle-tile ">
+					<!-- <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a> -->
+					{{#link-to 'patients'}}
+						<div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div>
+						<div class="circle-tile-content dark-blue">
+							<div class="circle-tile-description text-faded">Number of Patients</div>
+							<div class="circle-tile-number text-faded">265</div>
+							<a class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
+						</div>
+					{{/link-to}}
+					<h1>{{_modelQueryParams}}</h1>
+					<h2>iifidjfijdi</h2>
+				</div>
+			</div>
 
+			<div class="col-lg-3 col-sm-6">
+				<div class="circle-tile ">
+					{{#link-to 'appointments'}}
+						<div class="circle-tile-heading red"><i class="fa fa-clock-o fa-fw fa-3x"></i></div>
+						<div class="circle-tile-content red">
+							<div class="circle-tile-description text-faded">Number of Appointments</div>
+							<div class="circle-tile-number text-faded ">10</div>
+							<a class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
+						</div>
+					{{/link-to}}
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-sm-6">
+				<div class="circle-tile ">
+					
+					{{#link-to 'patients.admitted'}}
+						<div class="circle-tile-heading purple"><i class="fa fa-medkit fa-fw fa-3x"></i></div>
+						<div class="circle-tile-content purple">
+							<div class="circle-tile-description text-faded">Number of Patients currently admitted</div>
+							<div class="circle-tile-number text-faded ">20</div>
+							<a class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
+						</div>
+					{{/link-to}}
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-sm-6">
+				<div class="circle-tile ">
+					<!-- <a href="#"><div class="circle-tile-heading yellow"><i class="fa fa-flask fa-fw fa-3x"></i></div></a> -->
+					{{#link-to 'labs.completed'}}
+						<div class="circle-tile-heading yellow"><i class="fa fa-flask fa-fw fa-3x"></i></div>
+					<div class="circle-tile-content yellow">
+						<div class="circle-tile-description text-faded">Number of completed lab requests</div>
+						<div class="circle-tile-number text-faded ">5</div>
+						<a class="circle-tile-footer" href="#">More Info <i class="fa fa-chevron-circle-right"></i></a>
+					</div>
+					{{/link-to}}
+				</div>
+			</div>
+		</div>
+	</div>   
 </section>

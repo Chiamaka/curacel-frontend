@@ -1,10 +1,10 @@
 #!/bin/bash
 if [ -z "${1}" ] || [ -z "${2}" ]; then
-    HOST="http://127.0.0.1:5984"
+    HOST="http://52.33.118.77:5984"
     curl -X PUT $HOST/_config/admins/couchadmin -d '"test"'
-    SECUREHOST="http://couchadmin:test@127.0.0.1:5984"
+    SECUREHOST="http://couchadmin:test@52.33.118.77:5984"
 else
-    SECUREHOST="http://$1:$2@127.0.0.1:5984"
+    SECUREHOST="http://$1:$2@curacel.cloudant.com"
 fi
 curl -X PUT $SECUREHOST/_users/_security -d '{ "admins": { "names": [], "roles": ["admin"]}, "members": { "names": [], "roles": []}}'
 curl -X PUT $SECUREHOST/config
