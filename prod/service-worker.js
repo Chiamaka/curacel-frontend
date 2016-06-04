@@ -1,17 +1,25 @@
 importScripts('sw-toolbox.js');
 var CACHE_PREFIX = 'brocsw-v';
-var CACHE_VERSION = CACHE_PREFIX+'1463006405467';
+var CACHE_VERSION = CACHE_PREFIX+'1465058100515';
 toolbox.options.cache.name = CACHE_VERSION;
 var urlsToPrefetch = [
     '/',
-    "assets/hospitalrun-5597b10d9b3989644768cdf048da1cad.css",
-    "assets/hospitalrun-ebc042106906d13db61bc72c82818edf.js",
-    "assets/vendor-0285628d17614f05f440504e766b1bd8.js",
-    "assets/vendor-ed8acd5f4063b4b83b5df16f6da9e8b0.css",
+    "assets/hospitalrun-b73ef4d2e40da5675750dcad6fa090a9.css",
+    "assets/hospitalrun-c41b402cfebdf96d909f1f1159da4c0c.js",
+    "assets/vendor-12525198ce12104525f1ae09b469df40.css",
+    "assets/vendor-29b2eeff3f916aca6f2432b1e824ff66.js",
     "crossdomain.xml",
+    "curacel-logo-d5816cb321657b2ee8e7dcf37b9d7c2a.png",
+    "curacel-logo-white-23658730be90f4b547be295302cb982a.png",
     "dymo/BarcodeAsImage.label",
     "favicon-7440091f4e8bd83e23e4d5824c2c3da4.png",
     "favicon.ico",
+    "fonts/fontawesome-webfont.eot",
+    "fonts/fontawesome-webfont.svg",
+    "fonts/fontawesome-webfont.ttf",
+    "fonts/fontawesome-webfont.woff",
+    "fonts/fontawesome-webfont.woff2",
+    "fonts/FontAwesome.otf",
     "fonts/glyphicons-halflings-regular.eot",
     "fonts/glyphicons-halflings-regular.svg",
     "fonts/glyphicons-halflings-regular.ttf",
